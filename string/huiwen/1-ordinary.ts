@@ -16,6 +16,9 @@ function theLargestPalindrome(str: string) {
     if (str.length === 0 || str.length === 1) {
         return str;
     }
+    if (str.length === 2 && str[0] !== str[1]) {
+        return str[0];
+    }
     for (let i = 0; i < str.length; i++) {
         for (let j = i + 1; j < str.length; j++) {
             // slice the string
@@ -26,7 +29,7 @@ function theLargestPalindrome(str: string) {
             }
         }    
     }
-    return targetPalindrome.length === 0 ? str[0] : targetPalindrome;
+    return targetPalindrome;
 }
 
 console.log(theLargestPalindrome('')); // => ""
