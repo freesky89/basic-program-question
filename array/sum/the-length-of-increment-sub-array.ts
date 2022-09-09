@@ -8,7 +8,6 @@ function theLengthOfIncremenSubArray(arr = []) {
     if (arr.length === 0) {
         result = 0;
     }
-
     // two nested loop by the opposite direction
     for (let c = 1; c < arr.length; c++) {
         for(let i = 0; i < c; i++) {
