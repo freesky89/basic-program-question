@@ -1,4 +1,4 @@
-// find the first and the last position of specified-number by binarary search
+// find the first and the last position of specified-numbern from a sorted array by binarary search
 function findTheFirstAndTheLastPosition(arr = [], target: number) {
     function binarySearch(lower: boolean) {
         let left = 0; 
