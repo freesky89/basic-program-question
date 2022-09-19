@@ -13,23 +13,20 @@ function isPalindrome(str: string) {
 function theLargestPalindrome(str: string) {
     // initial targetPailindrome
     let targetPalindrome = '';
-    if (str.length === 0 || str.length === 1) {
+    if (str.length === 0) {
         return str;
-    }
-    if (str.length === 2 && str[0] !== str[1]) {
-        return str[0];
     }
     for (let i = 0; i < str.length; i++) {
         for (let j = i + 1; j < str.length; j++) {
             // slice the string
             let ss = str.slice(i, j+1);
             // is the ss is huiwen, if yes and length > initial, then update it
-            if(isPalindrome(ss) && ss.length > targetPalindrome.length) {
+            if(isPalindrome(ss) && ss.length >= targetPalindrome.length) {
                 targetPalindrome = ss;
             }
         }    
     }
-    return targetPalindrome;
+    return targetPalindrome === "" ? str[0] : targetPalindrome;
 }
 
 console.log(theLargestPalindrome('')); // => ""
