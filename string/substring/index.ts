@@ -1,4 +1,5 @@
 // find the largest no-repeat substring from the target string
+// eg: "abcabcbb" => abc 3  "pwwkew" => wke/kew 3
 function theLargestNumberOfNoRepeatSubstring(str: string) {
     const set = new Set();
     let index = -1;
