@@ -1,3 +1,5 @@
+// give a string, please judege the string is or is not a valid string
+// eg: ([]) => true ([) => false ([{}])() => true
 function isValid(str: string) {
     let map = {
         '(': ')',
