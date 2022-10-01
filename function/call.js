@@ -12,3 +12,5 @@ Function.prototype.myCall = function(context = window) {
     return result;
 }
 
+
+
