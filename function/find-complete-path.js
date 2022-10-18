@@ -1,5 +1,4 @@
 // give a nested object and a target value, please find the full path when the target value exist in the nested object
-
 const obj = {
     text: 'beijing',
     children: [
